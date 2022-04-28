@@ -9,42 +9,62 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/compiler/bootstrap.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/compiler/style.css">
 
-    <title>Curso de Bootstrap 4</title>
+    <title>Curso de Bootstrap 4 - Ministrado por Ricardo Sanches</title>
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark" style="background-color:#8E58A6">
       <div class="container">
-        <a class="navbar-brand h1 mb-0" href="#">Curso</a>
+        <a class="navbar-brand h1 mb-0" href="https://github.com/Narayana-Brahmajyoti/Bootstrap-4" target="_blank">Curso Bootstrap 5</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSite">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link active" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
+            </li>  
+          </ul>
+          
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contato</a>
+              <ul class="dropdown-menu dropdown-menu-dark" style="background-color:#8E58A6" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href ="mailto:nbrahmajyoti@gmail.com" target="_blank">Email</a></li>
+                <li><a class="dropdown-item" href="https://github.com/Narayana-Brahmajyoti" target="_blank">Github</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/narayanabrahmajyoti/" target="_blank">Instagram</a></li>
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/narayana-brahmajyoti/" target="_blank">Linkedin</a></li>
+                <li><a class="dropdown-item" href = "">Whatsapp</a></li>
+                 
+                  <!-- Criar modal para o qr code do Whatsapp -->
+                
+              </ul>
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navDrop">Social</a>
-            </li>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Github</a>
-              <a class="dropdown-item" href="#">Instagram</a>
-              <a class="dropdown-item" href="#">Linkedin</a>
-            </div> 
+          
+          <div >
+            <form class="form-inline d-inline-flex p-2 bd-highlight">
+              <input class="form-control " type="search" placeholder="Buscar..." aria-label="Pesquisar">
+              <button class="btn btn-default" type="submit"> Ok</button>
+            </form>         
+          </div>
+           
+           
+           
+          
+          
+          
+        </div>               
       </div>
     </nav>
+
     <script src="./node_modules/jquery/dist/jquery.js"></script>
-    <script src="./node_modules/popper.js/dist/popper.js"></script>
+    <script src="./node_modules/popper.js/dist/popper"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    
 
   </body>
 </html>
