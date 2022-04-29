@@ -12,7 +12,7 @@
     <title>Curso de Bootstrap 4 - Ministrado por Ricardo Sanches</title>
   </head>
   <body>
-
+    <!-- Nabvar -->
     <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark" style="background-color:#8E58A6">
       <div class="container">
         <a class="navbar-brand h1 mb-0" href="https://github.com/Narayana-Brahmajyoti/Bootstrap-4" target="_blank">Curso Bootstrap 5</a>
@@ -27,8 +27,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Sobre</a>
             </li>  
-          </ul>
-          
+          </ul>          
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contato</a>
@@ -43,28 +42,69 @@
                 
               </ul>
             </li>
-          </ul>
-          
+          </ul>          
           <div >
             <form class="form-inline d-inline-flex p-2 bd-highlight">
               <input class="form-control " type="search" placeholder="Buscar..." aria-label="Pesquisar">
               <button class="btn btn-default" type="submit"> Ok</button>
             </form>         
-          </div>
-           
-           
-           
-          
-          
-          
+          </div>                  
         </div>               
       </div>
     </nav>
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagens/tecnologia-5g-futurecom.jpg" class="img-fluid d-block w-100 vh-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Primeiro slide</h5>
+            <p>Espaço reservado para descrever o primeiro slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imagens/por-do-sol-ponta-do-muta-bahia.jpg" class="img-fluid d-block w-100 vh-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Segundo slide</h5>
+            <p>Espaço reservado para descrever o segundo slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imagens/vida noturna.jpg" class="img-fluid d-block w-100 vh-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Terceiro slide</h5>
+            <p>Espaço reservado para descrever o terceiro slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imagens/urso gigante.jpg" class=" img-fluid d-block w-100 vh-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Quarto slide</h5>
+            <p>Espaço reservado para descrever o quarto slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Avançar</span>
+      </button>
+    </div>  
+    <!--  -->
+
 
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/popper.js/dist/popper"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>    
 
   </body>
 </html>
