@@ -6,42 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/compiler/bootstrap.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
 
     <title>Curso de Bootstrap 4 - Ministrado por Ricardo Sanches</title>
   </head>
   <body>
     <!-- Nabvar -->
-    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark" style="background-color:#8E58A6">
-      <div class="container">
-        <a class="navbar-brand h1 mb-0" href="https://github.com/Narayana-Brahmajyoti/Bootstrap-4" target="_blank">Curso Bootstrap 5</a>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color:#8E58A6">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="https://github.com/Narayana-Brahmajyoti/Bootstrap-4" target="_blank">Curso Bootstrap 5</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSite">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sobre</a>
-            </li>  
-          </ul>          
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contato</a>
-              <ul class="dropdown-menu dropdown-menu-dark" style="background-color:#8E58A6" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href ="mailto:nbrahmajyoti@gmail.com" target="_blank">Email</a></li>
-                <li><a class="dropdown-item" href="https://github.com/Narayana-Brahmajyoti" target="_blank">Github</a></li>
-                <li><a class="dropdown-item" href="https://www.instagram.com/narayanabrahmajyoti/" target="_blank">Instagram</a></li>
-                <li><a class="dropdown-item" href="https://www.linkedin.com/in/narayana-brahmajyoti/" target="_blank">Linkedin</a></li>
-                <li><a class="dropdown-item" href = "">Whatsapp</a></li>
-                 
-                  <!-- Criar modal para o qr code do Whatsapp -->
-                
-              </ul>
-            </li>
+            </li> 
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contato</a>
+                <ul class="dropdown-menu dropdown-menu-dark" style="background-color:#8E58A6" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href ="mailto:nbrahmajyoti@gmail.com" target="_blank">Email</a></li>
+                  <li><a class="dropdown-item" href="https://github.com/Narayana-Brahmajyoti" target="_blank">Github</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/narayanabrahmajyoti/" target="_blank">Instagram</a></li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/narayana-brahmajyoti/" target="_blank">Linkedin</a></li>
+                  <li><a class="dropdown-item" href = "">Whatsapp</a></li>
+                   
+                    <!-- Criar modal para o qr code do Whatsapp -->
+                  
+                </ul>
+              </li> 
+            </ul>          
           </ul>          
           <div >
             <form class="form-inline d-inline-flex p-2 bd-highlight">
@@ -99,9 +99,73 @@
         <span class="visually-hidden">Avançar</span>
       </button>
     </div>  
+    <!-- Scrollspy -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center my-5">
+          <h1 class="display-3">Seja bem vindo a área Scrollspy</h1>
+          <p>Estou testando está tag do bootrstap 5 :)</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <nav id="navbarVertical" class="nav-link navbar navbar-light" style="background-color:#F0DCF2">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item1">Item 1</a>
+              <nav class="nav nav-pills flex-column">               
+                <a class="nav-link ms-3 my-1" href="#item1-1">Item 1.1</a>
+                <a class="nav-link ms-3 my-1" href="#item1-2">Item 1.2</a>
+                <a class="nav-link ms-3 my-1" href="#item1-3">Item 1.3</a>
+              </nav>
+              <a class="nav-link " href="#item2">Item 2</a>
+              <nav class="nav nav-pills flex-column">               
+                <a class="nav-link ms-3 my-1" href="#item2-1">Item 2.1</a>
+                <a class="nav-link ms-3 my-1" href="#item2-2">Item 2.2</a>
+              </nav>
+              <a class="nav-link " href="#item3">Item 3</a>
+              <nav class="nav nav-pills flex-column">               
+                <a class="nav-link ms-3 my-1" href="#item3-1">Item 3.1</a>
+                <a class="nav-link ms-3 my-1" href="#item3-2">Item 3.2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+        <div class="col-sm-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbarVertical" data-bs-offset="0" class="scrollspySite">
+            <h4 id="item1">Item 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non nisi est sit amet.</p>
+            <h5 id="item1-1">Item 1.1</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h5 id="item1-2">Item 1.2</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h5 id="item1-3">Item 1.3</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <h4 id="item2">Item 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non nisi est sit amet.</p>
+            <h5 id="item2-1">Iten 2.1</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h5 id="item2-2">Item 2.2</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <h4 id="item3">Item 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non nisi est sit amet.</p>
+            <h5 id="item3-1">Item 3.1</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h5 id="item3-2">Item 3.2</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <h4 id="item4">Item 4</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non nisi est sit amet.</p>
+            <h5 id="item4-1">Item 4.1</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h5 id="item4-2">Item 4.2</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--  -->
-
-
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/popper.js/dist/popper"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>    
